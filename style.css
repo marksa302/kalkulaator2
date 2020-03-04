@@ -1,1 +1,88 @@
+.wrapper {
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns:1fr;
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+    grid-template-areas:
 
+    "header"
+    "content"
+    "footer"
+    }
+
+    .contentMain {
+        background-color: azure;
+        display: grid;
+        grid-area: content;
+        margin-left: 100px;
+        margin-right: 100px;
+        grid-template-columns: 150px 1fr 150px 200px;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-areas:
+        "input input input input"
+        "date description time payPerHour"
+        "bottom bottom bottom total"
+    }
+
+    .inputField {
+        grid-area: input;
+        padding: 40px;
+        align-content: center;
+        background-color: beige;
+    }
+
+    .input {
+        border: none;
+        border-radius: 5px;
+        line-height: 40px;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .input.date {
+        width: 150px;
+        
+        margin-left: 100px;
+    }
+
+    .input.description {
+        
+        width: 300px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+
+    .input.hour {
+        width: 80px;
+        
+    }
+
+    .input.apiWorkType {
+        height: 36px;
+        width: 150px;
+        margin-left: 50px;
+    }
+
+    .output h4{
+        text-align: center;
+        
+    }
+
+    .output.dateField{
+        border-right: 1px solid gray;
+    }
+    .output.descriptionField{
+        border-right: 1px solid gray;
+    }
+    .output.timeField {
+        border-right: 1px solid gray;
+    }
+
+
+    .footer{
+        grid-area: bottom;
+        background-color: blanchedalmond;
+    }
