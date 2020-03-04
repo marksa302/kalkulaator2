@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <script src="https://kit.fontawesome.com/7ed3ee8a07.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -10,9 +11,13 @@
     <div class="wrapper">
       <div class="contentMain">
         <div class="inputField">
+            <H1>Kuupäev</H1>
           <input class="input date" type="date" name="" id="" />
+          <H1>Kirjeldus</H1>
           <input class="input description" type="text" />
+          <h1>Tundide arv</h1>
           <input class="input hour" type="number" />
+            <h1>Töö valik</h1>
           <select class="input apiWorkType" name="workType">
             <option value="valik-1">Töövalik</option>
             <option value="valik-2">Töövalik</option>
@@ -35,12 +40,16 @@
             <option value="valik-19"></option>
             <option value="valik-20"></option>
           </select>
+          <button class="input btn" type="button"><i class="fas fa-plus fa-2x"></i>
+          </button>
+          <div class="bottomImage"><img src="img/3156627.jpg" alt=""></div>
         </div>
         <div class="output dateField"><h4>Kuupäev</h4></div>
         <div class="output descriptionField"><h4>Kirjeldus</h4></div>
         <div class="output timeField"><h4>Tunnid</h4></div>
         <div class="output payPerHourField"><h4>Tunnitasu</h4></div>
-        <div class="footer"></div>
+        <div class="footer"><h2>Kokku:</h2></div>
+        <div class="totalSum"></div>
       </div>
     </div>
   </body>
