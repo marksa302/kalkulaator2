@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <script src="https://kit.fontawesome.com/7ed3ee8a07.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7ed3ee8a07.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -11,13 +14,13 @@
     <div class="wrapper">
       <div class="contentMain">
         <div class="inputField">
-            <H1>Kuupäev</H1>
+          <h1>Kuupäev</h1>
           <input class="input date" type="date" name="" id="dateTime" />
-          <H1>Kirjeldus</H1>
-          <input class="input description" type="text" id="descr"/>
+          <h1>Kirjeldus</h1>
+          <input class="input description" type="text" id="descr" />
           <h1>Tundide arv</h1>
-          <input class="input hour" type="number" id="time"/>
-            <h1>Töö valik</h1>
+          <input class="input hour" type="number" id="time" />
+          <h1>Töö valik</h1>
           <select class="input apiWorkType" name="workType" id="typeChoice">
             <option value="valik-1">Nõude pesija</option>
             <option value="valik-2">koristaja</option>
@@ -40,20 +43,28 @@
             <option value="valik-19">Logistik</option>
             <option value="valik-20">Torumees</option>
           </select>
-          <button class="input btn" id onclick="addNew();" type="button"><i class="fas fa-plus fa-2x"></i>
+          <button class="input btn" id onclick="addNew();" type="button">
+            <i class="fas fa-plus fa-2x"></i>
           </button>
-          <div class="bottomImage"><img src="img/3156627.jpg" alt=""></div>
+          <button class="input deleteLast" id onclick="deleteLast();">
+            <i class="fas fa-trash fa-2x"></i>
+          </button>
+          <div class="bottomImage"><img src="img/3156627.jpg" alt="" /></div>
         </div>
-        <div class="output dateField"><h4>Kuupäev</h4>
-        <ul id="ddOutput"></ul>
+        <div class="output dateField">
+          <h4>Kuupäev</h4>
+          <ul id="ddOutput"></ul>
         </div>
-        <div class="output descriptionField"><h4>Kirjeldus</h4>
-        <ul id="dscrOutput"></ul>
+        <div class="output descriptionField">
+          <h4>Kirjeldus</h4>
+          <ul id="dscrOutput"></ul>
         </div>
-        <div class="output timeField"><h4>Tunnid</h4>
-        <ul id="timeOutput"></ul>
+        <div class="output timeField">
+          <h4>Tunnid</h4>
+          <ul id="timeOutput"></ul>
         </div>
         <div class="output payPerHourField"><h4>Tunnitasu</h4></div>
+
         <div class="footer"><h2>Kokku:</h2></div>
         <div class="totalSum"></div>
       </div>
