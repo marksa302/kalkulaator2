@@ -1,6 +1,23 @@
-.Sections{
-    font-size: 10px;
-    margin-top: 10px;
-    color: red;
+body{
+    background: url(https://i.kym-cdn.com/photos/images/newsfeed/001/548/017/98a.gif);
+}
+
+.element{
+    margin-top: 5px;
+
+}
+
+
+.first{
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.second{
+    margin-left: 50px;
+}
+
+.button{
+    margin-left: 20px;
 }
 
