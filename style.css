@@ -5,11 +5,12 @@ body{
 }
 .wrapper {
     display: grid;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20px;
+    margin-right:20px;
     grid-template-columns:1fr;
     grid-template-rows: 100px 1fr 100px;
     height: 100vh;
+    justify-items: center;
     grid-template-areas:
 
     "header"
@@ -23,8 +24,6 @@ body{
         display: grid;
         box-shadow: 1px 1px 10px 1px  #385A64;
         grid-area: content;
-        margin-left: 100px;
-        margin-right: 100px;
         max-width: 1200px;
         grid-template-columns: 2fr 2fr 6fr 1fr 2fr;
         grid-template-rows: 8fr 1fr;
@@ -117,9 +116,7 @@ body{
         text-align: center;
         font-weight: bold;
     }
-    .output.timeField {
 
-    }
     .output.payPerHourField {
         background-color: whitesmoke;
         margin-right: 20px;
@@ -139,3 +136,124 @@ body{
         border-top: 2px solid #FF868F;
         
     }
+
+@media only screen and (max-width: 1200px) {
+
+    .contentMain {
+        background-color: white;
+        border-top: 10px solid #FF868F;
+        display: grid;
+        box-shadow: 1px 1px 10px 1px  #385A64;
+        grid-area: content;
+        min-width: 600px;
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "input input input input"
+        "date description time payPerHour"
+        "bottom bottom total total"
+   
+}
+
+.inputField { 
+    text-align: center;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.925), rgba(250, 246, 249, 0.952)),
+    url('img/3156627.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 0;
+    box-shadow: none;
+    border-bottom:2px solid #FF868F ;
+
+}
+
+.inputField h1 {
+    margin-left: 110px;
+    box-shadow: none;
+
+  
+}
+
+.input {
+    background-color: transparent;
+ 
+}
+.apiWorkType{
+    text-align: center;
+    display: flex;
+    margin-left: 180px;
+}
+
+.input.btn {
+    margin-bottom: 30px;
+    
+}
+
+.deleteLast{
+
+}
+
+.bottomImage{
+    display: none;
+}
+img {
+
+}
+.output h4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #385A64;
+    border-bottom: 2px solid #FF868F;
+    margin: 0;
+    opacity: 0.8;
+    padding: 20px;
+
+}
+
+.output.dateField{
+    margin-left: 20px;
+    grid-area: date;
+    min-width: 110px;
+    min-height: 300px;
+}
+
+#ddOutput {
+    padding: 0;
+    text-align: center;
+}
+.output.descriptionField{
+    grid-area: description;
+    background-color:whitesmoke;
+    min-width: 300px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.output.timeField{
+    grid-area: time;
+}
+
+.output.payPerHourField {
+    grid-area: payPerHour;
+    background-color: whitesmoke;
+    margin-right: 20px;
+}
+
+.footer{
+    grid-area: bottom;
+    border-top: 2px solid #FF868F;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #385A64;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.totalSum {
+    grid-area: total;
+    margin-right: 20px;
+    border-top: 2px solid #FF868F;
+    
+}
+    
+}

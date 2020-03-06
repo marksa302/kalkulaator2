@@ -22,28 +22,28 @@
           <input class="input hour" type="number" id="time" />
           <h1>Töö valik</h1>
           <select class="input apiWorkType" name="workType" id="typeChoice">
-            <option value="valik-1">Nõude pesija</option>
-            <option value="valik-2">koristaja</option>
-            <option value="valik-3">Õpetaja</option>
-            <option value="valik-4">Auto juht</option>
-            <option value="valik-5">Lapse hoidja</option>
-            <option value="valik-6">Kokk</option>
-            <option value="valik-7">Elektrik</option>
-            <option value="valik-8">Tehnik</option>
-            <option value="valik-9">Maaler</option>
-            <option value="valik-10">Nõustaja</option>
-            <option value="valik-11">Õde</option>
-            <option value="valik-12">Ehitaja(Lego)</option>
-            <option value="valik-13">Ette lugeja</option>
-            <option value="valik-14">Õmbleja</option>
-            <option value="valik-15">Raamatupidaja</option>
-            <option value="valik-16">Juuksur</option>
-            <option value="valik-17">Psüholoog</option>
-            <option value="valik-18">Aednik</option>
-            <option value="valik-19">Logistik</option>
-            <option value="valik-20">Torumees</option>
+            <option value="39">Nõudepesija</option>
+            <option value="36">Puhastusteenindaja</option>
+            <option value="11">Õpetaja</option>
+            <option value="35">Autojuht</option>
+            <option value="13">Lapsehoidja</option>
+            <option value="39">Kokk</option>
+            <option value="38">Elektrik</option>
+            <option value="72">Tehnik</option>
+            <option value="36">Maaler</option>
+            <option value="23">Nõustaja</option>
+            <option value="34">Õde</option>
+            <option value="28">Ehitaja</option>
+            <option value="44">Ette lugeja</option>
+            <option value="32">Õmbleja</option>
+            <option value="19">Raamatupidaja</option>
+            <option value="44">Juuksur</option>
+            <option value="22">Psüholoog</option>
+            <option value="44">Aednik</option>
+            <option value="38">Logistik</option>
+            <option value="44">Torumees</option>
           </select>
-          <button class="input btn" id onclick="addNew();" type="button">
+          <button class="input btn" id onclick="addNew()" type="button">
             <i class="fas fa-plus fa-2x"></i>
           </button>
           <button class="input deleteLast" id onclick="deleteLast();">
@@ -63,10 +63,14 @@
           <h4>Tunnid</h4>
           <ul id="timeOutput"></ul>
         </div>
-        <div class="output payPerHourField"><h4>Tunnitasu</h4></div>
+        <div class="output payPerHourField"><h4>Tunnitasu</h4>
+          <ul id="payPerHour"></ul>
+        </div>
 
         <div class="footer"><h2>Kokku:</h2></div>
-        <div class="totalSum"></div>
+        <div class="totalSum">
+          <h2 id="tSum" ></h2>
+        </div>
       </div>
     </div>
     <script src="api.js"></script>
