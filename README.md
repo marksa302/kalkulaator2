@@ -1,3 +1,3 @@
 # kalkulaator2
-
-stat ameti json link http://andmebaas.stat.ee/sdmx-json/data/PA001/D11_EMPL+D11_EMPL_SE+D11_EMPL_CV+D11_EMPL_CY+D11_EMPL_CQ+D_EMPL+D_EMPL_SE+D_EMPL_CV+D11111_H+D11111_H_SE+D11111_H_CV+D11111_H_FT+D11111_H_PT+D_HOUR+D_HOUR_SE+D_HOUR_CV+B1_EMPL+B1_EMPL_SE+B1_EMPL_CV+STR_B1_FT+STR_B1_PT+EMPL+STR_EMPL+STR_D11.TOTAL+A+B+C+D+E+F+G+H+I+J+K+L+M+N+O+P+Q+R+S.Q/all?startTime=2016-Q1&endTime=2019-Q4&dimensionAtObservation=allDimensions
+rakenduse link: https://ta19heinsoo.itmajakas.ee/ta19/kalkulaator/
+Figma puudub.
